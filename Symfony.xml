@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Symfony</Name>
+  <Repository>bitnami/symfony:1</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort></HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/app</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>SYMFONY_PROJECT_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>192.168.1.150</Value>
+      <Name>MARIADB_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>3306</Value>
+      <Name>MARIADB_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>MARIADB_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>MARIADB_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>MARIADB_DATABASE</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="8000" Default="" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="false" Mask="false">8001</Config>
+  <Config Name="Host Path 1" Target="/app" Default="" Mode="rw" Description="Container Path: /app" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Host Key 1" Target="SYMFONY_PROJECT_NAME" Default="" Mode="" Description="Container Variable: SYMFONY_PROJECT_NAME" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Host Key 2" Target="MARIADB_HOST" Default="" Mode="" Description="Container Variable: MARIADB_HOST" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.150</Config>
+  <Config Name="Host Key 3" Target="MARIADB_PORT" Default="" Mode="" Description="Container Variable: MARIADB_PORT" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
+  <Config Name="Host Key 4" Target="MARIADB_USER" Default="" Mode="" Description="Container Variable: MARIADB_USER" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Host Key 5" Target="MARIADB_PASSWORD" Default="" Mode="" Description="Container Variable: MARIADB_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Host Key 6" Target="MARIADB_DATABASE" Default="" Mode="" Description="Container Variable: MARIADB_DATABASE" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>
